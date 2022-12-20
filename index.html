@@ -13,23 +13,27 @@
 <body>
 
     <header>
-        <h1 class="title_td"> To Do list</h1>
+        <h1 class="title_td"> To Do List</h1>
     </header>
 
     <main>
 
         <div class="input_task">
-            <input id="new-task-field" name="task" class="task_todo" type="text" placeholder="Ajouter une nouvelle tache">
-            <form>
-                <label for="task" id="task" name="Choses à faire">
-                    <button id="add-task-button" type="submit"> Ajouter</button>
-                </label>
+            <form id="form">
+                <input autocomplete= off required id="new-task-field" name="task" class="task_todo" type="text"
+                    placeholder="Ajouter une nouvelle tache">
+                <form id="form">
+                    <label for="task" id="task" name="Choses à faire">
+                        <input class ="addtask" id="addtaskbutton" type="submit" value="Ajouter"> 
+                    </label>
+                </form>
             </form>
         </div>
 
+        <div id="notask" class="notask"> Aucune tâche repérée !</div>
+
         <div class="list_task">
             <ul id="to_do_list">
-
             </ul>
         </div>
 
@@ -43,6 +47,8 @@
     <footer>
 
     </footer>
+    <script src="./js/index.js"></script>
 </body>
-<script src="./js/index.js"></script>
+
+
 </html>

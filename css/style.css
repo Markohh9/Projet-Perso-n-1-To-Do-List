@@ -4,6 +4,7 @@
 }
 
 html { scroll-behavior: smooth;
+        background-image: url("data:image/svg+xml,%3Csvg id='visual' viewBox='0 0 1920 1080' width='1920' height='1080' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1'%3E%3Crect x='0' y='0' width='1920' height='1080' fill='%234D1473'%3E%3C/rect%3E%3Cpath d='M0 678L274 727L549 696L823 761L1097 783L1371 680L1646 661L1920 808L1920 1081L1646 1081L1371 1081L1097 1081L823 1081L549 1081L274 1081L0 1081Z' fill='%233b0e59'%3E%3C/path%3E%3Cpath d='M0 738L274 711L549 717L823 793L1097 759L1371 833L1646 803L1920 784L1920 1081L1646 1081L1371 1081L1097 1081L823 1081L549 1081L274 1081L0 1081Z' fill='%23300d4c'%3E%3C/path%3E%3Cpath d='M0 801L274 894L549 797L823 843L1097 860L1371 807L1646 854L1920 892L1920 1081L1646 1081L1371 1081L1097 1081L823 1081L549 1081L274 1081L0 1081Z' fill='%23260c3f'%3E%3C/path%3E%3Cpath d='M0 949L274 887L549 947L823 938L1097 886L1371 975L1646 951L1920 954L1920 1081L1646 1081L1371 1081L1097 1081L823 1081L549 1081L274 1081L0 1081Z' fill='%231d0932'%3E%3C/path%3E%3Cpath d='M0 1014L274 973L549 958L823 979L1097 985L1371 957L1646 954L1920 978L1920 1081L1646 1081L1371 1081L1097 1081L823 1081L549 1081L274 1081L0 1081Z' fill='%23170126'%3E%3C/path%3E%3C/svg%3E");
 }
 
 body {
@@ -20,26 +21,29 @@ body {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 48px;
+    color: #fff;
 }
 
 .input_task{
     display: flex;
     justify-content: center;
+    margin-bottom: 48px;
 }
 
-.input_task button {
+.addtask {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    color: #fff;
     width: 120px;
     height: 38px;
-    background-color: #fff;
+    background-color: #3B0E59;
     border-radius: 25px;
-    border-color: black;
+    border-color: white;
     border-width: 2px;
     margin-left: -20px;
 }
 
-.input_task button:hover {
+.addtask:hover {
     cursor: pointer;
     transform: scale(1.2);
     transition-duration: 600ms;
@@ -49,8 +53,30 @@ body {
     font-family: 'Montserrat', sans-serif;
     width: 600px;
     border-radius: 25px 0 0 25px;
-    border-width: 1px;
+    border: none;
     padding: 8px;
     padding-right: 28px;
-
+    background-color: #A76FBF;
 }
+
+.task_todo::placeholder {
+    color: #fff;
+}
+
+.list_task {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 28px;
+}
+
+
+.notask {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: #fff;
+    
+}
+
