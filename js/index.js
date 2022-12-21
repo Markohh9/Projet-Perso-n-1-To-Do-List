@@ -7,8 +7,6 @@ const buttonAdd = document.getElementById("addtaskbutton");
 const ul = document.getElementById("to_do_list");
 const notask = document.getElementById("notask");
 
-
-
 // code de notre fonction pour notre liste
 form.onsubmit = (event) =>{
 
@@ -37,9 +35,6 @@ form.onsubmit = (event) =>{
     //empêchement de l'actualisation du naviguateur avec le boutton submit par défaut
     event.preventDefault();
 
-// Affichage du text quand notre liste est vide
-    notask.style.display = "none";
-
     //enregistrement dans le localStorage pour le nav
     localStorage.setItem("task",ul.innerHTML);
 }
@@ -49,12 +44,6 @@ form.onsubmit = (event) =>{
 // création de notre fonction pour pouvoir supprimer les taches effectués
 function del (element) {
     element.remove();
-    
-    // fonction pour réaficher notre texte comme quoi aucune tache n'y est trouvé
-    // si ol est = a 0 
-    if (ul.innerHTML == "") {
-        noTask.style.display = "flex";
-    }
 
     localStorage.setItem("task",ul.innerHTML);
 }
@@ -76,3 +65,5 @@ for(let span of spanDels)
 // savoir pourquoi quand je n'ai plus de tache, mon Aucune tâche repérée ! ne se 
 // réafiche pas + 
 // pq quand j'actualise, la dernière tache même supprimé se réaffiche
+
+//cursor custom 

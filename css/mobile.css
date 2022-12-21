@@ -1,0 +1,37 @@
+@media screen and (max-width: 768px)
+{
+
+    html {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body{
+        width: 377px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .addtask {
+        width: 28%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .task_todo {
+        margin-bottom: 8px;
+        width: 372px;
+        border-radius: 25px;
+    }
+
+    #task {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .task_todo::placeholder {
+        color: #fff;
+    }
